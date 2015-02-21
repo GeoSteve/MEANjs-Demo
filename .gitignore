@@ -7,8 +7,6 @@ config/env/*
 !config/env/_default_*
 config/sslcerts/*
 !config/sslcerts/_default_*
-config/strategies/*
-!config/strategies/_default_*
 public/lib
 app/tests/coverage/
 .bower-*/

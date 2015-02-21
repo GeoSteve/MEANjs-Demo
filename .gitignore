@@ -3,7 +3,12 @@
 .sass-cache/
 npm-debug.log
 node_modules/
-config/
+config/env/*
+!config/env/default_*
+config/sslcerts/*
+!config/sslcerts/default_*
+config/strategies/*
+!config/strategies/default_*
 public/lib
 app/tests/coverage/
 .bower-*/

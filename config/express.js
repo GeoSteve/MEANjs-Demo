@@ -21,7 +21,8 @@ var fs = require('fs'),
 	flash = require('connect-flash'),
 	config = require('./config'),
 	consolidate = require('consolidate'),
-	path = require('path');
+	path = require('path'),
+	seo = require('mean-seo');
 
 module.exports = function(db) {
 	// Initialize express app
@@ -110,6 +111,12 @@ module.exports = function(db) {
 	app.use(helmet.ienoopen());
 	app.disable('x-powered-by');
 
+	// The MEAN-SEO module caches the page for the duration you define, either by saving the pages to the disk or to a Redis instance (requires installing Redis
+	app.use(seo({
+	    cacheClient: 'disk', // Can be 'disk' or 'redis'
+	    cacheDuration: 2 * 60 * 60 * 24 * 1000, // In milliseconds for disk cache
+	}));
+	
 	// Setting the app router and static folder
 	app.use(express.static(path.resolve('./public')));
 

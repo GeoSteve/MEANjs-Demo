@@ -15,7 +15,8 @@ module.exports = {
 			css: [
 				'public/lib/bootstrap/dist/css/bootstrap.css',
 				'public/lib/bootstrap/dist/css/bootstrap-theme.css',
-				'public/lib/components-font-awesome/css/font-awesome.css'
+				'public/lib/components-font-awesome/css/font-awesome.css',
+				'public/lib/angular-toastr/dist/angular-toastr.css'
 			],
 			js: [
 				'public/lib/jquery/dist/jquery.js',
@@ -27,7 +28,8 @@ module.exports = {
 				'public/lib/angular-sanitize/angular-sanitize.js', 
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
-				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js'
+				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
+				'public/lib/angular-toastr/dist/angular-toastr.js'
 			]
 		},
 		css: [

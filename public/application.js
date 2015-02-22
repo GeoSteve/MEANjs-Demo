@@ -7,6 +7,9 @@ angular.module(ApplicationConfiguration.applicationModuleName, ApplicationConfig
 angular.module(ApplicationConfiguration.applicationModuleName).config(['$locationProvider',
 	function($locationProvider) {
 		$locationProvider.hashPrefix('!');
+        
+        // use the HTML5 History API
+        $locationProvider.html5Mode(true);
 	}
 ]);
 
@@ -19,5 +22,5 @@ angular.element(document).ready(function() {
 	angular.bootstrap(document, [ApplicationConfiguration.applicationModuleName]);
 
     // Initialize Stripe with your publisher key
-    $window.Stripe.setPublishableKey('pk_test_FCra1cSGL6KWxLBExXOfiaih');
+    window.Stripe.setPublishableKey('pk_test_FCra1cSGL6KWxLBExXOfiaih');
 });

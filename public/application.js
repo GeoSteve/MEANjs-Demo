@@ -7,9 +7,9 @@ angular.module(ApplicationConfiguration.applicationModuleName, ApplicationConfig
 angular.module(ApplicationConfiguration.applicationModuleName).config(['$locationProvider',
 	function($locationProvider) {
 		$locationProvider.hashPrefix('!');
-        
+
         // use the HTML5 History API
-        $locationProvider.html5Mode(true);
+        // $locationProvider.html5Mode(true);
 	}
 ]);
 

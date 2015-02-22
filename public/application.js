@@ -17,4 +17,7 @@ angular.element(document).ready(function() {
 
 	//Then init the app
 	angular.bootstrap(document, [ApplicationConfiguration.applicationModuleName]);
+
+    // Initialize Stripe with your publisher key
+    $window.Stripe.setPublishableKey('pk_test_FCra1cSGL6KWxLBExXOfiaih');
 });

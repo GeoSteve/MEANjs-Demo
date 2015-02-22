@@ -21,7 +21,8 @@ module.exports = {
 				'public/lib/angular-ui-router/release/angular-ui-router.min.js',
 				'public/lib/angular-ui-utils/ui-utils.min.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.min.js',
-				'public/lib/angular-toastr/dist/angular-toastr.js'
+				'public/lib/angular-toastr/dist/angular-toastr.js',
+				'public/lib/angular-payments/lib/angular-payments.js'
 			]
 		},
 		css: 'public/dist/application.min.css',

@@ -7,8 +7,10 @@ module.exports = {
 			css: [
 				'public/lib/bootstrap/dist/css/bootstrap.min.css',
 				'public/lib/bootstrap/dist/css/bootstrap-theme.min.css',
+				'public/lib/components-font-awesome/css/font-awesome.css'
 			],
 			js: [
+				'public/lib/jquery/dist/jquery.js',
 				'public/lib/angular/angular.min.js',
 				'public/lib/angular-resource/angular-resource.js', 
 				'public/lib/angular-cookies/angular-cookies.js', 

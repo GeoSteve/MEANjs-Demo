@@ -22,7 +22,9 @@ module.exports = {
 				'public/lib/angular-ui-utils/ui-utils.min.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.min.js',
 				'public/lib/angular-toastr/dist/angular-toastr.js',
-				'public/lib/angular-payments/lib/angular-payments.js'
+				'public/lib/angular-payments/lib/angular-payments.js',
+				'https://js.stripe.com/v2/'
+
 			]
 		},
 		css: 'public/dist/application.min.css',

@@ -16,6 +16,24 @@
 .section-main {
     margin-top: 40px;
 }
-h1 {
+.jumbotron {
     text-align: center;
+}
+.jumbotron p {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+#mc-form {
+    margin-top: 20px;
+}
+#mc-form .btn {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+#mc-form .form-group {
+    padding: 15px;
+}
+#mc-form label {
+    font-size: 16px;
+    padding-right: 5px;
 }

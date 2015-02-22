@@ -1,5 +1,37 @@
 <section class="section-main" data-ng-controller="HomeController">
   <div class="jumbotron">
     <h1>Landing Page</h1>
+    <p>
+        This product is coming soon. To be notified of the progress and receive prerelease offers, please signup to our mailing list.
+    </p>
+
+    <form class="form-inline" id="mc-form" name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl">
+      <div ng-hide="mailchimp.result === 'success'">
+        <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='StevenHeinrich'">
+        <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us10'">
+        <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='9cf9540f570c359c2879b6f18'">
+        <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='c7dc121a7a'">
+        <div class="form-group">
+            <label for="mc-name">Name</label>
+            <input id="mc-name" class="form-control" type="text" name="name" ng-model="mailchimp.NAME" required>
+        </div>
+        <div class="form-group">
+            <label for="mc-email">Email</label>
+            <input id="mc-email" class="form-control" type="email" name="email" ng-model="mailchimp.EMAIL" required>
+        </div>
+        <button class="btn btn-default" ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">Subscribe</button>
+      </div>
+
+      <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
+      <div ng-show="mailchimp.result === 'error'" ng-cloak>
+        <span ng-bind-html="mailchimp.errorMessage"></span>
+      </div>
+
+      <!-- Show success message if MailChimp returned successfully. -->
+      <div ng-show="mailchimp.result === 'success'" ng-cloak>
+        <span ng-bind-html="mailchimp.successMessage"></span>
+      </div>
+    </form>
+
   </div>
 </section>

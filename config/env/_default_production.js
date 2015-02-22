@@ -22,6 +22,7 @@ module.exports = {
 				'public/lib/angular-ui-utils/ui-utils.min.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.min.js',
 				'public/lib/angular-toastr/dist/angular-toastr.js',
+				'public/lib/angular-mailchimp/angular-mailchimp.js',
 				'public/lib/angular-payments/lib/angular-payments.js',
 				'https://js.stripe.com/v2/'
 

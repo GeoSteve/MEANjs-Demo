@@ -14,6 +14,7 @@ var ApplicationConfiguration = (function() {
 		'ui.bootstrap',
 		'ui.utils',
 		'toastr',
+		'mailchimp',
 		'angularPayments'
 	];
 
